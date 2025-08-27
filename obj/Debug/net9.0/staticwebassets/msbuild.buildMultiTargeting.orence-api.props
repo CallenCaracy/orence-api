@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/orence-api.props" />
+</Project>
