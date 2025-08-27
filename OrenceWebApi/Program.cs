@@ -1,27 +1,18 @@
 using OrenceApi.Data;
+using OrenceApi.Setup;
+using Scalar.AspNetCore;
+using DotNetEnv;
+using Microsoft.EntityFrameworkCore;
+
 
 var builder = WebApplication.CreateBuilder(args);
-
-// Add services to the container.
-//var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-
-//builder.Services.AddDbContext<AppDbContext>(options =>
-//    options.UseNpgsql(connectionString));
-
-builder.Services.AddCors(options =>
-{
-    options.AddDefaultPolicy(policy =>
-    {
-        policy.WithOrigins("http://localhost:5173")
-              .AllowAnyMethod()
-              .AllowAnyHeader()
-              .AllowCredentials();
-    });
-});
-builder.Services.AddControllers();
-builder.Services.AddOpenApi();
-//builder.Services.AddSwaggerGen(); error
-builder.Services.AddEndpointsApiExplorer();
+var setup = new Setup(builder);
+Env.Load();
+//Setup
+setup.SetupCors();
+setup.GeneralApiSetup();
+setup.SetupJWT();
+setup.SetupDbConn();
 
 var app = builder.Build();
 
@@ -33,10 +24,13 @@ if (app.Environment.IsDevelopment())
 
 app.UseCors();
 
+app.MapScalarApiReference();
+
 ControllerActionEndpointConventionBuilder controllerActionEndpointConventionBuilder = app.MapControllers();
 
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
