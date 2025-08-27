@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using OrenceApi.Data;
 using OrenceApi.Models;
+using OrenceApi.Services;
 
 namespace OrenceApi.Controllers
 {
