@@ -5,7 +5,7 @@ This is the API backend for Orence, built with .NET and C#.
 
 ## Overview
 OrenceWebApi provides the foundational backend services for the Orence project, focusing on authentication and user management.  
-It leverages C# and ASP.NET Core for robust and scalable API design.
+It leverages C# and ASP.NET Core for robust and scalable API design, Neon PostgreSQL for database.
 
 ---
 
@@ -56,6 +56,7 @@ Business logic and utilities such as JWT handling (`JwtService.cs`).
 ## Technologies Used
 - C#  
 - ASP.NET Core  
+- Neon PostgreSQL
 
 ---
 
