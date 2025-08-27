@@ -1,25 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\clare\\OneDrive\\Documents\\JLabs-Web\\orence-api\\orence-api.csproj": {}
+    "/home/yousif/Programming/orence-api/orence-api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\clare\\OneDrive\\Documents\\JLabs-Web\\orence-api\\orence-api.csproj": {
+    "/home/yousif/Programming/orence-api/orence-api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\clare\\OneDrive\\Documents\\JLabs-Web\\orence-api\\orence-api.csproj",
+        "projectUniqueName": "/home/yousif/Programming/orence-api/orence-api.csproj",
         "projectName": "orence-api",
-        "projectPath": "C:\\Users\\clare\\OneDrive\\Documents\\JLabs-Web\\orence-api\\orence-api.csproj",
-        "packagesPath": "C:\\Users\\clare\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\clare\\OneDrive\\Documents\\JLabs-Web\\orence-api\\obj\\",
+        "projectPath": "/home/yousif/Programming/orence-api/orence-api.csproj",
+        "packagesPath": "/home/yousif/.nuget/packages/",
+        "outputPath": "/home/yousif/Programming/orence-api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\clare\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/yousif/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "/usr/lib/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -38,7 +39,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -47,6 +48,10 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[9.0.8, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[9.0.3, )"
             }
           },
           "imports": [
@@ -68,7 +73,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.109/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

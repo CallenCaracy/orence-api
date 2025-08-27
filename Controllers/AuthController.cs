@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace JlabsBackend.Controllers;
+namespace orence_api.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]

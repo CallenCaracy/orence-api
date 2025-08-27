@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("orence-api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c43d3493fa66d12ac5730d57cacca87d9efb00dc")]
 [assembly: System.Reflection.AssemblyProductAttribute("orence-api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("orence-api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
